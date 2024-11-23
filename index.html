@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fusion Feast Restaurant & Cafe</title>
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <style>
         body {
             font-family: 'Georgia', serif;
@@ -43,7 +45,7 @@
             text-align: center;
         }
         .menu-section {
-            background-color: #fff8e1; /* Same as website background */
+            background-color: #fff8e1;
             color: #333;
             padding: 50px 20px;
             border-radius: 15px;
@@ -55,7 +57,7 @@
             margin-bottom: 20px;
         }
         .menu-section img {
-            width: 90%; /* Increased size */
+            width: 90%;
             max-width: 700px;
             height: auto;
             border-radius: 15px;
@@ -88,12 +90,12 @@
 </head>
 <body>
     <!-- Header Section -->
-    <header>
+    <header data-aos="fade-down">
         <img src="photo_2024-11-24_00-03-15.jpg" alt="Fusion Feast Logo">
     </header>
 
     <!-- Navigation Bar -->
-    <nav>
+    <nav data-aos="fade-up">
         <a href="#about">About Us</a>
         <a href="#menu">Menu</a>
         <a href="#gallery">Gallery</a>
@@ -101,7 +103,7 @@
     </nav>
 
     <!-- About Us Section -->
-    <section id="about">
+    <section id="about" data-aos="fade-right">
         <h2>Welcome to Fusion Feast</h2>
         <p>Fusion Feast offers a unique blend of Indian and Latvian cuisines, combining the best of both worlds to create a one-of-a-kind dining experience. Enjoy the rich spices of India and the hearty flavors of Latvia in our signature fusion dishes.</p>
 
@@ -114,7 +116,7 @@
     </section>
 
     <!-- Menu Section -->
-    <section id="menu" class="menu-section">
+    <section id="menu" class="menu-section" data-aos="zoom-in">
         <h2>Our Menu</h2>
         <img src="photo_2024-11-24_00-13-27.jpg" alt="Fusion Feast Menu">
         <div class="menu-description">
@@ -126,18 +128,18 @@
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery">
+    <section id="gallery" data-aos="flip-up">
         <h2>Gallery</h2>
         <p>Take a look at some of our delicious dishes and cozy restaurant ambiance.</p>
         <div class="gallery">
-            <img src="food1.jpg" alt="Delicious Dish 1">
-            <img src="food2.jpg" alt="Delicious Dish 2">
-            <img src="food3.jpg" alt="Delicious Dish 3">
+            <img src="food1.jpg" alt="Delicious Dish 1" data-aos="fade-up">
+            <img src="food2.jpg" alt="Delicious Dish 2" data-aos="fade-up" data-aos-delay="200">
+            <img src="food3.jpg" alt="Delicious Dish 3" data-aos="fade-up" data-aos-delay="400">
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" data-aos="fade-left">
         <h2>Contact Us</h2>
         <p>Fusion Feast Restaurant & Cafe (Indian & Latvian Fusion)</p>
         <p>Address: Bajaru iela 16 , Riga , Latvia</p>
@@ -146,8 +148,17 @@
     </section>
 
     <!-- Footer Section -->
-    <footer>
+    <footer data-aos="fade-up">
         <p>© 2024 Fusion Feast. All rights reserved.</p>
     </footer>
+
+    <!-- AOS JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200, /* Animation duration in ms */
+            offset: 50, /* Trigger point for animations */
+        });
+    </script>
 </body>
 </html>
